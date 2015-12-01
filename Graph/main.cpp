@@ -7,9 +7,15 @@
 //
 
 #include <iostream>
+//#include "GrafoLista.h"
+#include "GrafoMatriz.hpp"
+
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+//    GrafoLista grafoAdj = new GrafoLista(3);
+    GrafoMatriz *matriz = new GrafoMatriz(5);
+
+    matriz->adicionarAresta(3, 2);
+    matriz->imprimeMatriz();
     return 0;
 }

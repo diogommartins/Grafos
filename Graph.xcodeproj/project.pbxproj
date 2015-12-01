@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		669DB2041C0E24EE00ED8D57 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669DB2031C0E24EE00ED8D57 /* main.cpp */; };
+		669DB20E1C0E25A700ED8D57 /* GrafoMatriz.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669DB20C1C0E25A700ED8D57 /* GrafoMatriz.cpp */; settings = {ASSET_TAGS = (); }; };
+		669DB2121C0E25B900ED8D57 /* GrafoLista.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 669DB2101C0E25B900ED8D57 /* GrafoLista.cpp */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		669DB2001C0E24EE00ED8D57 /* Graph */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Graph; sourceTree = BUILT_PRODUCTS_DIR; };
 		669DB2031C0E24EE00ED8D57 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		669DB20C1C0E25A700ED8D57 /* GrafoMatriz.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrafoMatriz.cpp; sourceTree = "<group>"; };
+		669DB20D1C0E25A700ED8D57 /* GrafoMatriz.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GrafoMatriz.hpp; sourceTree = "<group>"; };
+		669DB2101C0E25B900ED8D57 /* GrafoLista.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GrafoLista.cpp; sourceTree = "<group>"; };
+		669DB2111C0E25B900ED8D57 /* GrafoLista.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = GrafoLista.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,29 @@
 		669DB2021C0E24EE00ED8D57 /* Graph */ = {
 			isa = PBXGroup;
 			children = (
+				669DB20B1C0E258D00ED8D57 /* Matriz de adjacencia */,
+				669DB20A1C0E258600ED8D57 /* Lista de adjacencia */,
 				669DB2031C0E24EE00ED8D57 /* main.cpp */,
 			);
 			path = Graph;
+			sourceTree = "<group>";
+		};
+		669DB20A1C0E258600ED8D57 /* Lista de adjacencia */ = {
+			isa = PBXGroup;
+			children = (
+				669DB2101C0E25B900ED8D57 /* GrafoLista.cpp */,
+				669DB2111C0E25B900ED8D57 /* GrafoLista.hpp */,
+			);
+			name = "Lista de adjacencia";
+			sourceTree = "<group>";
+		};
+		669DB20B1C0E258D00ED8D57 /* Matriz de adjacencia */ = {
+			isa = PBXGroup;
+			children = (
+				669DB20C1C0E25A700ED8D57 /* GrafoMatriz.cpp */,
+				669DB20D1C0E25A700ED8D57 /* GrafoMatriz.hpp */,
+			);
+			name = "Matriz de adjacencia";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +144,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				669DB20E1C0E25A700ED8D57 /* GrafoMatriz.cpp in Sources */,
+				669DB2121C0E25B900ED8D57 /* GrafoLista.cpp in Sources */,
 				669DB2041C0E24EE00ED8D57 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
